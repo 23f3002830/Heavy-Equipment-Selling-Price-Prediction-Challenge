@@ -258,10 +258,10 @@ heavy-equipment-selling-price-prediction/
 ├── requirements.txt
 │
 └── images/
-    ├── target_distribution.png
-    ├── missing_values.png
+    ├── eda.png
     ├── model_comparison.png
     └── feature_importance.png
+    └── result.png
 ```
 
 > The dataset files are not included in this repository because they are provided through the Kaggle competition environment.
@@ -273,7 +273,7 @@ heavy-equipment-selling-price-prediction/
 The complete implementation is available in:
 
 ```text
-heavy_equipment_price_prediction.ipynb
+heavy_equipment_selling_price_prediction.ipynb
 ```
 
 The notebook contains the complete workflow from data loading and EDA to model training, tuning, feature importance analysis, and final prediction generation.
@@ -286,9 +286,30 @@ The notebook contains the complete workflow from data loading and EDA to model t
 [Heavy Equipment Selling Price Prediction Challenge](https://www.kaggle.com/competitions/heavy-equipment-selling-price-prediction-challenge)
 
 **Kaggle Notebook:**
-*Add your personal Kaggle notebook link here*
+*heavy_equipment_selling_price_prediction.ipynb*
 
 ---
+
+## 🏆 Results
+
+### Model Performance
+
+| Model | Performance |
+|---|---|
+| LightGBM | 0.200549 |
+| XGBoost | 0.199628 |
+| CatBoost | 0.206244 |
+| Tuned-XGBoost | 0.199514 |
+
+### Best Model
+
+The best-performing model was **Tuned-XGBoost**.
+
+- **Best Model:** XGBoost
+- **Kaggle Score:** 0.18751
+- **Evaluation Metric:** RMSLE
+
+The final predictions were generated using the best-performing model and submitted to Kaggle.
 
 ## 📌 Key Takeaways
 
